@@ -106,6 +106,16 @@ body.scale-cv{
   max-width: 595px;
 }
 
+.scale-cv .experience,
+.scale-cv .certificate{
+  width: 337px; 
+}
+
+.scale-cv .languages_content{
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 1rem;
+}
+
 .scale-cv .section{
   padding: 1.5rem 0 .8rem;
 }
@@ -406,7 +416,7 @@ img{
 
 /*========== PROFILE ==========*/
 .profile_description{
-  text-align: center;
+  text-align: justify;
 }
 
 /*========== EDUCATION AND EXPERIENCE ==========*/
@@ -461,9 +471,12 @@ img{
 }
 
 /*========== SKILLS AND LANGUAGES ==========*/
-.skills_content,
-.languages_content{
+.skills_content{
   grid-template-columns: repeat(2, 1fr);
+}
+
+.languages_content{
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .languages_content{
@@ -474,7 +487,7 @@ img{
 .languages_name{
   display: flex;
   align-items: center;
-  margin-bottom: var(--mb-3);
+  margin-bottom: var(--mb-1);
 }
 
 .skills_circle,
@@ -491,6 +504,11 @@ img{
 .certificate_title{
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
+}
+
+.certificate_description{
+  color: var(--text-color);
+  text-align: justify;
 }
 
 /*========== REFERENCES ==========*/
@@ -598,7 +616,7 @@ img{
 
   .section-title,
   .profile_description{
-    text-align: initial;
+    text-align: justify;
   }
 
   .home_container{
@@ -613,10 +631,10 @@ img{
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .languages_content{
+  /* .languages_content{
     grid-template-columns: repeat(3, max-content);
     column-gap: 3.5rem;
-  }
+  } */
 
   .interests_container{
     grid-template-columns: repeat(4, max-content);
