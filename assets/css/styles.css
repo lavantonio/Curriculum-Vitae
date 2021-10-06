@@ -113,6 +113,10 @@ body.scale-cv{
   width: 337px;
 } */
 
+.scale-cv .home_container{
+gap: 0.8rem;  
+}
+
 .scale-cv .interests{
     margin-bottom: 1.6rem;
 }
