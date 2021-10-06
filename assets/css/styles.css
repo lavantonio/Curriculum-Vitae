@@ -4,7 +4,7 @@
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
-  
+
   /*========== Colors ==========*/
   --title-color: #0B0A0A;
   --text-color: #403A3A;
@@ -13,6 +13,7 @@
   --container-color-alt: #F0EFEF;
   --body-color: #FCFCFC;
   --background-img:  #e3dcdc;
+  --portfolio-color-img: #cdcddc;
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
@@ -54,6 +55,7 @@ body.dark-theme{
   --container-color-alt: #181616;
   --body-color: #2B2B2B;
   --background-img: #3e3c3c;
+  --portfolio-color-img: #3e3c3c;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -103,12 +105,16 @@ body.scale-cv{
 }
 
 .scale-cv .bd-container{
-  max-width: 595px;
+  max-width: 795px;
 }
 
-.scale-cv .experience,
+/* .scale-cv .experience,
 .scale-cv .certificate{
-  width: 337px; 
+  width: 337px;
+} */
+
+.scale-cv .interests{
+    margin-bottom: 1.6rem;
 }
 
 .scale-cv .languages_content{
@@ -170,7 +176,7 @@ body.scale-cv{
 .scale-cv .education_line,
 .scale-cv .experience_line{
   width: 1px;
-  height: 110%;
+  height: 120%;
   transform: translate(5px, 0);
 }
 
@@ -277,7 +283,7 @@ img{
     border-radius: 1rem 1rem 0 0;
     z-index: var(--z-fixed);
     transition: .3s;
-  } 
+  }
 }
 
 .nav_log,
@@ -315,7 +321,7 @@ img{
 
 .nav_icon{
   font-size: 1.2rem !important;
-  margin-bottom: 
+  margin-bottom:
   var(--mb-1);
 }
 
@@ -391,6 +397,9 @@ img{
   color: var(--container-color);
 }
 
+.home .number_color{
+  color: var(--text-color);
+}
 
 /*========== SOCIAL ==========*/
 .social-container{
@@ -414,6 +423,13 @@ img{
   margin-right: .25rem;
 }
 
+.portfolio_img{
+  border-radius: 50%;
+  height: 35px;
+  background-color: var(--portfolio-color-img);
+  margin-right: 5px
+}
+
 /*========== PROFILE ==========*/
 .profile_description{
   text-align: justify;
@@ -435,7 +451,7 @@ img{
   position: relative;
   display: block;
   width: 16px;
-  height: 16px; 
+  height: 16px;
   background-color: var(--text-color-light);
   border-radius: 50%;
   margin-top: .25rem;
@@ -445,7 +461,7 @@ img{
 .experience_line{
   display: block;
   width: 2px;
-  height: 110%;
+  height: 120%;
   background-color: var(--text-color-light);
   transform: translate(7px, 0);
 }
@@ -600,7 +616,7 @@ img{
     background-color: var(--container-color);
     box-shadow: 0 0 8px rgba(13,12,12,.15);
   }
-  
+
   .resume_left{
     background-color: var(--container-color-alt);
   }
@@ -640,6 +656,4 @@ img{
     grid-template-columns: repeat(4, max-content);
     column-gap: 3.5rem;
   }
-
 }
-
