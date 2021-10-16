@@ -100,7 +100,7 @@ let resumeButton = document.getElementById('resume-button');
 // Html2pdf options
 let opt = {
     margin:       0,
-    filename:     'myResume.pdf',
+    filename:     'Lav-Antonio_Valda_Rajic--resume.pdf',
     html2canvas:  { scale: 4 },
     jsPDF:        { format: 'a4', orientation: 'portrait' }
 };
